@@ -1,0 +1,196 @@
+<div>
+
+
+
+
+    <div class="Calculator">
+        
+    
+    
+        <div id="screen">0</div>
+        
+        <div id="numbers">
+        <script>
+            var screen = '';
+            var screenElement = document.getElementById("screen")
+            var number2 = document.getElementById("number1")
+            let numbs = '';
+            let clear1 = ''; 
+        </script>
+        
+    
+        <div id="numbs">
+    
+            <button id="number1" onclick="
+            numbs = numbs + '1';
+            console.log(numbs)
+            screen = screen + '1';
+            screenElement.textContent = screen;
+            ">
+                1
+            </button
+            >
+    
+            <button  onclick="
+            numbs = numbs + '2';
+            console.log(numbs)
+            screen = screen + '2';
+            screenElement.textContent = screen;
+            ">
+                2
+            </button>
+    
+            <button  onclick="
+            numbs = numbs + '3';
+            console.log(numbs)
+            screen = screen + '3';
+            screenElement.textContent = screen;
+            ">
+                3
+            </button>
+    
+            <button class="signs" onclick="
+            numbs = numbs + ' + ';
+            console.log( numbs)
+            screen = screen + ' + ';
+            screenElement.textContent = screen;
+            ">
+                +
+            </button>
+        </div>
+    
+    
+        <div id="numbs">
+    
+            <button onclick="
+            numbs = numbs + '4';
+            console.log(numbs)
+            screen = screen + '4';
+            screenElement.textContent = screen;
+            ">
+                4
+            </button
+            >
+    
+            <button  onclick="
+            numbs = numbs + '5';
+            console.log(numbs)
+            screen = screen + '5';
+            screenElement.textContent = screen;
+            ">
+                5
+            </button>
+    
+            <button  onclick="
+            numbs = numbs + '6';
+            console.log(numbs)
+            screen = screen + '6';
+            screenElement.textContent = screen;
+            ">
+                6
+            </button>
+    
+            <button class="signs" onclick="
+            numbs = numbs + ' - ';
+            console.log( numbs)
+            screen = screen + ' - ';
+            screenElement.textContent = screen;
+            ">
+                -
+            </button>
+        </div>
+    
+    
+        <div id="numbs">
+    
+            <button onclick="
+            numbs = numbs + '7';
+            console.log(numbs)
+            screen = screen + '7';
+            screenElement.textContent = screen;
+            ">
+                7
+            </button
+            >
+    
+            <button  onclick="
+            numbs = numbs + '8';
+            console.log(numbs)
+            screen = screen + '8';
+            screenElement.textContent = screen;
+            ">
+                8
+            </button>
+    
+            <button  onclick="
+            numbs = numbs + '9';
+            console.log(numbs)
+            screen = screen + '9';
+            screenElement.textContent = screen;
+            ">
+                9
+            </button>
+    
+            <button class="signs" onclick="
+            numbs = numbs + ' * ';
+            console.log( numbs)
+            screen = screen + ' * ';
+            screenElement.textContent = screen;
+            ">
+                *
+            </button>
+        </div>
+    
+        <div id="numbs">
+            
+            <button onclick="
+            numbs = numbs + '0';
+            console.log(numbs)
+            screen = screen + '0';
+            screenElement.textContent = screen;
+            "
+            >
+                0
+            </button>
+            
+            <button  onclick="
+            numbs = numbs + '.';
+            console.log(numbs)
+            screen = screen + '.';
+            screenElement.textContent = screen;
+            ">
+                .
+            </button>
+    
+             <button onclick="
+            numbs = eval(numbs) 
+            console.log(numbs)
+            screen = numbs;
+            screenElement.textContent = screen;
+            ">
+                =
+            </button>
+            <button class="signs" onclick="
+            numbs = numbs + '/';
+            console.log(numbs)
+            screen = screen + '/';
+            screenElement.textContent = screen;
+            ">
+                /
+            </button>
+    
+            <p><button class="clear" onclick="
+                numbs = '';
+                console.log('Cleared!')
+    
+                screen = numbs + '0';
+            screenElement.textContent = screen;
+            screen = '';
+                ">
+                Clear
+            </button></p>
+        </div>
+    </div>
+
+    </div>
+</div>
